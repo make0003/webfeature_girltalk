@@ -1,14 +1,13 @@
 :root {
-    --dreamy-white: #fff5eb;
-    --hug-me-pink: #f7c7d9;
-    --power-blue:#273aaa;
-    --love-red:#fc4d5c;
-    --count-on-me-black: #1d1d1b;
-    --soft-tears-blue: #d1ecef;
-    background-color: #fff5eb;
+  --dreamy-white: #fff5eb;
+  --hug-me-pink: #f7c7d9;
+  --power-blue: #273aaa;
+  --love-red: #fc4d5c;
+  --count-on-me-black: #1d1d1b;
+  --soft-tears-blue: #d1ecef;
+  background-color: #fff5eb;
 }
 
 * {
-    margin: 0;
+  margin: 0;
 }
-
