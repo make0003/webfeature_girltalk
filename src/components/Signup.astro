@@ -2,29 +2,113 @@
 
 ---
 
-<form action="Sign up
-">
-  <label for="dnavn">Deltagers navn</label>
-  <input type="text" />
-  <label for="gruppe">Gruppe</label>
-  <input type="text" />
-  <label for="mail">Deltagers e-mail</label>
-  <input type="text" />
-  <label for="alder">Deltagers alder</label>
-  <input type="text" />
-  <label for="nummer">Deltagers mobilnummer</label>
-  <input type="text" />
-  <label for="omrode">Hvilket område ønsker du forløb i? (*)</label>
-  <input type="text" />
-  <label for="sister">Hvor har du hørt om Sisterhood?</label>
-  <input type="text" />
-  <label for="why">Hvorfor ønsker du at deltage i gruppeforløbet SiSTERHOOD?(*)</label>
-  <input type="text" />
+<h2>Tilmeld dig og bliv en del af vores fælleskaber</h2>
+<p>Vi giver dig et trygt rum med andre piger og unge kvinder, hvor vi taler om det, der fylder og styrker hinanden.</p>
+
+<form class="sisterhood-form" action="/signup">
+  <div class="form-group">
+    <label for="dnavn">Deltagers navn(*)</label>
+    <input type="text" id="dnavn" name="dnavn" />
+  </div>
+
+<div class="form-group">
+    <label for="dnavn">Deltagers email(*)</label>
+    <input type="text" id="email" name="email" />
+  </div>
+
+  <div class="form-group">
+    <label for="dnavn">Deltagers alder(*)</label>
+    <input type="text" id="alder" name="alder" />
+  </div>
+
+  <div class="form-group">
+    <label for="dnavn">Deltagers mobilnummer(*)</label>
+    <input type="text" id="email" name="email" />
+  </div>
+
+  <div class="form-group">
+    <label for="gruppe">Gruppe(*)
+    </label>
+    <input type="text" id="gruppe" name="gruppe" />
+  </div>
+
+  <div class="form-group">
+    <label for="gruppe">Hvilket område ønsker du forløb i?(*)</label>
+    <input type="text" id="område" name="område" />
+  </div>
+
+  <div class="form-group">
+    <label for="why">Hvorfor ønsker du at deltage i gruppeforløbet SiSTERHOOD?(*)</label>
+    <input type="text" id="why" name="why" />
+  </div>
+  
+
+  <div class="form-action">
+    <button type="submit">Indsend tilmelding</button>
+  </div>
 </form>
 
 <style>
-  form {
+  h2 {
+    font-family: "obviously", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--power-blue);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  p {
+    color: var(--power-blue);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+.sisterhood-form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    background-color: #273aaa;
+    padding: 16px; 
+    color: white;
+    margin: auto; 
+    margin-top: 40px; 
+    margin-bottom: 40px; 
+    border-radius: 0.4rem;
+    width: 40%; 
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group label {
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  .form-group input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .form-action {
+    grid-column: span 1; 
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .form-action button {
+    padding: 8px 16px;
+    background-color: #f7c7d9;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
   }
 </style>
