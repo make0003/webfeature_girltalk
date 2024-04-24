@@ -2,30 +2,39 @@
 
 ---
 
+<section class="grid_1">
+  <p><span>ENSOMHED ER FORSKELLIGT</span>Fra person til person, men er en følelse, som opstår, når et menneske ikke får opfyldt sine sociale behov - som alle mennesker har brug for. Desværre er det hele 19% af alle unge i Danmark mellem 16 - 24 år, som føler sig ensomme. Samtidig bliver flere unge også diagnosticeret med psykiske lidelser, kæmper med stress og andre mentale udfordringer. I gennemsnit føler 52,3 procent unge kvinder mellem 16 og 24 år sig stressede, og 34% oplever mentale udfordringer med tal fra Sundhedsstyrelsen og Statens Institut for Folkesundhed, SDU</p>
+  <br /><br />
+  <p class="p1">Psykisk mistrivsel viser sig i form af lav livstilfredshed, psykiske og psykosomatiske symptomer, stress, ensomhed, selvskadende adfærd eller søvnproblemer.</p>
+</section>
+
 <div class="grid">
   <section>
-    <h2>ENSOMHED ER FORSKELLIGT</h2>
-  </section>
-  <section> <p>
-    Fra person til person, men er en følelse, som opstår, når et menneske ikke får opfyldt sine sociale behov - som alle mennesker har brug for. Desværre er det hele 19% af alle unge i Danmark mellem 16 - 24 år, som føler sig ensomme. Samtidig bliver flere unge også diagnosticeret med psykiske lidelser, kæmper med stress og andre mentale udfordringer. I gennemsnit føler 52,3 procent unge kvinder mellem 16 og 24 år sig stressede, og 34% oplever mentale udfordringer med tal fra Sundhedsstyrelsen og Statens Institut for Folkesundhed, SDU</p>
-    <p class="p1">Psykisk mistrivsel viser sig i form af  lav livstilfredshed, psykiske og psykosomatiske symptomer, stress, ensomhed, selvskadende adfærd eller søvnproblemer.</p>
-  </section>
-
-  
-  <section>
- <h2> ENSOMHED ER EN <br> UBEHAGELIG FØLELSE</h2>
- <img src="public/figure.webp" alt="" />
+    <h2>ENSOMHED ER EN <br /> UBEHAGELIG FØLELSE</h2>
   </section>
   <section>
-      <p> Som i en kortvarig periode kan være ufarlig. Langvarig ensomhed er derimod noget vi som samfund bør tage alvorligt. Ensomhed og andre mentale udfordringer har ikke kun psykiske påvirkning nu her, men kan sætte varige spor. <br> <br>
-Ensomhed og mentale udfordringer kan være med til at øge alvorlig mistrivsel og risikoen for psykisk sygdom, men også fysiske sygdomme – da langvarig ensomhed kan medvirke til udvikling af hjertekarsygdomme, type 2-diabetes, demens og for tidlig død . Det viser tal fra “Den Nationale Sundhedsprofil 2021” </p>
-        <div class="hjerter"><img src="public/hjerter.webp" alt="" /></div>
+    <p class="p2">
+      Som i en kortvarig periode kan være ufarlig. Langvarig ensomhed er derimod noget vi som samfund bør tage alvorligt. Ensomhed og andre mentale udfordringer har ikke kun psykiske påvirkning nu her, men kan sætte varige spor. <br />
+      <br />
+      Ensomhed og mentale udfordringer kan være med til at øge alvorlig mistrivsel og risikoen for psykisk sygdom, men også fysiske sygdomme – da langvarig ensomhed kan medvirke til udvikling af hjertekarsygdomme, type 2-diabetes, demens og for tidlig død . Det viser tal fra “Den Nationale Sundhedsprofil 2021”
+    </p>
   </section>
-
 </div>
-
+<section class="grid_2">
+  <div class="figur"><img src="public/figure.webp" alt="" /></div>
+  <div class="hjerter"><img src="public/hjerter.webp" alt="" /></div>
+</section>
 
 <style>
+  span {
+    font-family: "obviously", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--power-blue);
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
   h2 {
     font-family: "obviously", sans-serif;
     font-weight: 700;
@@ -33,38 +42,47 @@ Ensomhed og mentale udfordringer kan være med til at øge alvorlig mistrivsel o
     color: var(--power-blue);
     font-size: 2rem;
     text-align: center;
-    margin-left: 93px;
-    margin-top: 50px;
+    letter-spacing: 0.2rem;
   }
 
-  .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  .grid_1 {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 3rem;
   }
 
-  img {
-    width: 80%;
+  .grid,
+  .grid_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
-  p{
+  .figur img {
+    width: 100%;
+    height: 80%;
+  }
+
+  p {
     font-family: "Archivo", sans-serif;
-    margin-top: 190px;
-    margin-right: 93px;
     line-height: 28px;
-  font-weight: 300;
+    font-weight: 300;
   }
   .p1 {
     color: var(--love-red);
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    margin-top: 74px;
-    margin-right: 93px;
+    padding-bottom: 10rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
   }
 
-  .hjerter {
-    width: 60%;
-    margin-top: 30px;
-    margin-left: 150px;
+  .p2 {
+    padding-right: 12rem;
   }
 
-
+  .hjerter img {
+    width: 40%;
+    padding-left: 15rem;
+    padding-top: 5rem;
+  }
 </style>
